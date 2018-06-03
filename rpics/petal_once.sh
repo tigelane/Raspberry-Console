@@ -10,10 +10,9 @@ apt-get install libtool
 apt-get install autoconf
 
 # Move and Unpack ser2net from the /boot folder
-sudo cp /boot/rpics/ser2net-3.5.tar.gz /tmp
-cd /tmp
-tar -xvf ser2net-3.5.tar.gz
-cd ser2net
+cp /boot/rpics/ser2net-3.5.tar.gz /tmp
+tar -xvf /tmp/ser2net-3.5.tar.gz
+cd /tmp/ser2net
 
 # Build and install ser2net
 autoreconf -i
