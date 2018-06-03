@@ -23,19 +23,15 @@ touch ssh
 ## Add config file for Ser2Net
 /etc/ser2net.conf
 
-BANNER:banner:CONSOLE LAB Terminal Server TCP port p device d serial parms srn
+BANNER:banner:Serial_Console_1
 
-TRACEFILE:tr1:/var/log/ser2net/p-Y-M-D-H:i:s.U
-4001:telnet:0:/dev/ttyUSB0:9600 8DATABITS NONE 1STOPBIT banner tr=tr1 timestamp
+4001:telnet:0:/dev/ttyUSB0:9600 8DATABITS NONE 1STOPBIT
 
-TRACEFILE:tr2:/var/log/ser2net/p-Y-M-D-H:i:s.U
-4002:telnet:0:/dev/ttyUSB1:9600 8DATABITS NONE 1STOPBIT banner tr=tr2 timestamp
+4002:telnet:0:/dev/ttyUSB1:9600 8DATABITS NONE 1STOPBIT
 
-TRACEFILE:tr3:/var/log/ser2net/p-Y-M-D-H:i:s.U
-4003:telnet:0:/dev/ttyUSB2:9600 8DATABITS NONE 1STOPBIT banner tr=tr3 timestamp
+4003:telnet:0:/dev/ttyUSB2:9600 8DATABITS NONE 1STOPBIT
 
-TRACEFILE:tr4:/var/log/ser2net/p-Y-M-D-H:i:s.U
-4004:telnet:0:/dev/ttyUSB3:9600 8DATABITS NONE 1STOPBIT banner tr=tr4 timestamp
+4004:telnet:0:/dev/ttyUSB3:9600 8DATABITS NONE 1STOPBIT
 
 ## Install Serial Driver
 ### https://www.packet6.com/configuring-your-raspberry-pi-as-a-console-server/
